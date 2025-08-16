@@ -98,28 +98,34 @@ export default function ContactSection() {
                   <Mail className="w-5 h-5 text-primary" />
                   <span>arkaa.aioffice@gmail.com</span>
                 </div>
-              </CardContent>
-            </Card>
-            <Card className="bg-card shadow-lg">
-              <CardHeader>
-                <CardTitle>Our Studios</CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-4 text-foreground/90">
                  <div className="flex items-start gap-4">
                   <MapPin className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
                   <div>
-                    <h3 className="font-semibold">Tirupur Office</h3>
+                    <h3 className="font-semibold">Our Studios</h3>
                     <p className="text-foreground/80">123 Design Street, Tirupur, Tamil Nadu</p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-4">
-                  <MapPin className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
-                  <div>
-                    <h3 className="font-semibold">Vellore Office</h3>
                     <p className="text-foreground/80">456 Architecture Ave, Vellore, Tamil Nadu</p>
                   </div>
                 </div>
               </CardContent>
+            </Card>
+            <Card className="bg-card shadow-lg">
+                <CardHeader>
+                    <CardTitle>Find Us Here</CardTitle>
+                    <CardDescription>Tirupur Office Location</CardDescription>
+                </CardHeader>
+                <CardContent>
+                    <div className="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62695.5843477122!2d77.30062184469113!3d11.107537333538424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba9077653775e0f%3A0xfca73322d8a577d!2sTiruppur%2C%20Tamil%20Nadu%2C%20India!5e0!3m2!1sen!2sus!4v1700000000000"
+                        width="100%"
+                        height="100%"
+                        style={{ border: 0 }}
+                        allowFullScreen={true}
+                        loading="lazy"
+                        referrerPolicy="no-referrer-when-downgrade"
+                    ></iframe>
+                    </div>
+                </CardContent>
             </Card>
           </div>
         </div>
