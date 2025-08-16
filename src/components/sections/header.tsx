@@ -4,6 +4,8 @@ import { Menu } from 'lucide-react';
 import {
   Sheet,
   SheetContent,
+  SheetHeader,
+  SheetTitle,
   SheetTrigger,
   SheetClose,
 } from '@/components/ui/sheet';
@@ -84,7 +86,10 @@ export default function Header() {
                 </Button>
               </SheetTrigger>
               <SheetContent side="right" className="w-[280px] bg-card">
-                  <div className="p-6 pt-12">
+                  <SheetHeader className="p-6 pb-0">
+                    <SheetTitle>Navigation</SheetTitle>
+                  </SheetHeader>
+                  <div className="p-6">
                      <nav className="flex flex-col space-y-5">
                       <SheetClose asChild>
                           <NavLink id="about" onClick={closeSheet} className="text-lg font-medium text-foreground/80 hover:text-foreground transition-colors">About</NavLink>
