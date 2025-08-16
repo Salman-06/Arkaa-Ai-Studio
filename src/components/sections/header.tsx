@@ -1,5 +1,5 @@
 'use client';
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Menu } from 'lucide-react';
 import {
   Sheet,
@@ -45,15 +45,24 @@ const NavLink = ({
 };
 
 export default function Header() {
-  const [isScrolled, setIsScrolled] = React.useState(false);
-  const [isSheetOpen, setIsSheetOpen] = React.useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [isSheetOpen, setIsSheetOpen] = useState(false);
 
-  React.useEffect(() => {
+  useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 10);
     };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    // Ensure this only runs on the client
+    if (typeof window !== 'undefined') {
+      window.addEventListener('scroll', handleScroll);
+      // Initial check
+      handleScroll();
+    }
+    return () => {
+      if (typeof window !== 'undefined') {
+        window.removeEventListener('scroll', handleScroll);
+      }
+    };
   }, []);
   
   const closeSheet = () => setIsSheetOpen(false);
@@ -86,7 +95,7 @@ export default function Header() {
                 </Button>
               </SheetTrigger>
               <SheetContent side="right" className="w-[280px] bg-card">
-                  <SheetHeader className="p-6 pb-0">
+                  <SheetHeader>
                     <SheetTitle>Navigation</SheetTitle>
                   </SheetHeader>
                   <div className="p-6">
