@@ -52,16 +52,12 @@ export default function Header() {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 10);
     };
-    // Ensure this only runs on the client
-    if (typeof window !== 'undefined') {
-      window.addEventListener('scroll', handleScroll);
-      // Initial check
-      handleScroll();
-    }
+    
+    window.addEventListener('scroll', handleScroll);
+    handleScroll();
+    
     return () => {
-      if (typeof window !== 'undefined') {
-        window.removeEventListener('scroll', handleScroll);
-      }
+      window.removeEventListener('scroll', handleScroll);
     };
   }, []);
   
