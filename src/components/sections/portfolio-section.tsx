@@ -5,7 +5,7 @@ const projects = [
   {
     title: 'Modern Villa',
     category: 'Architecture',
-    image: 'https://placehold.co/600x400.png',
+    image: 'https://images.unsplash.com/photo-1691425700585-c108acad6467?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxNb2Rlcm4lMjBWaWxsYXxlbnwwfHx8fDE3NTUzNTQ4ODN8MA&ixlib=rb-4.1.0&q=80&w=1080',
     hint: 'modern architecture',
   },
   {
