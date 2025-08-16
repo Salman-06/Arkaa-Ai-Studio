@@ -11,7 +11,7 @@ const projects = [
   {
     title: 'Minimalist Apartment',
     category: 'Interior Design',
-    image: 'https://placehold.co/600x400.png',
+    image: 'https://images.unsplash.com/photo-1592276040264-e10344a6a10e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxOHx8TWluaW1hbGlzdCUyMEFwYXJ0bWVudHxlbnwwfHx8fDE3NTUzNTQ4OTd8MA&ixlib=rb-4.1.0&q=80&w=1080',
     hint: 'minimalist interior',
   },
   {
