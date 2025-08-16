@@ -5,13 +5,13 @@ const projects = [
   {
     title: 'Modern Villa',
     category: 'Architecture',
-    image: 'https://images.unsplash.com/photo-1691425700585-c108acad6467?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxNb2Rlcm4lMjBWaWxsYXxlbnwwfHx8fDE3NTUzNTQ4ODN8MA&ixlib=rb-4.1.0&q=80&w=1080',
+    image: 'https://images.unsplash.com/photo-1699212012286-4df61c5dd041?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxNb2RlbiUyMFZJbGxhfGVufDB8fHx8MTc1NTM1NTE1Nnww&ixlib=rb-4.1.0&q=80&w=1080',
     hint: 'modern architecture',
   },
   {
     title: 'Minimalist Apartment',
     category: 'Interior Design',
-    image: 'https://images.unsplash.com/photo-1592276040264-e10344a6a10e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxOHx8TWluaW1hbGlzdCUyMEFwYXJ0bWVudHxlbnwwfHx8fDE3NTUzNTQ4OTd8MA&ixlib=rb-4.1.0&q=80&w=1080',
+    image: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxBcGFydG1lbnR8ZW58MHx8fHwxNzU1MzU1MTc2fDA&ixlib=rb-4.1.0&q=80&w=1080',
     hint: 'minimalist interior',
   },
   {
