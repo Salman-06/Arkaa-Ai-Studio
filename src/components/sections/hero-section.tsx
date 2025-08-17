@@ -12,17 +12,17 @@ import { Button } from '@/components/ui/button';
 
 const images = [
   {
-    src: 'https://images.unsplash.com/photo-1580587771525-78b9dba3b914?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    src: '/hero1.avif',
     alt: 'Modern house exterior',
     hint: 'modern house'
   },
   {
-    src: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    src: '/hero2.avif',
     alt: 'Luxury living room interior',
     hint: 'luxury interior'
   },
   {
-    src: 'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    src: '/hero3.avif',
     alt: 'Cozy apartment living room',
     hint: 'apartment interior'
   },
