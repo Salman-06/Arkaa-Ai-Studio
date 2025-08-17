@@ -22,7 +22,7 @@ export default function AboutSection() {
           <div className="order-1 md:order-2">
             <div className="relative w-full" style={{paddingBottom: '75%'}}>
               <Image
-                src="https://images.unsplash.com/photo-1593085512500-5d55148d6f0d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwb3J0cmFpdCUyMGFyY2hpdGVjdHxlbnwwfHx8fDE3NTU0NTg4MjF8MA&ixlib=rb-4.1.0&q=80&w=1080"
+                src="/about.jpg"
                 alt="Ar.Prithiv Anand.R"
                 layout="fill"
                 className="rounded-lg object-cover shadow-2xl"
