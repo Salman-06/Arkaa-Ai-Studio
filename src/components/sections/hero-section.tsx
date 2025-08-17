@@ -12,17 +12,17 @@ import { Button } from '@/components/ui/button';
 
 const images = [
     {
-      src: '/hero1.avif',
+      src: 'https://images.unsplash.com/photo-1654200150895-5be29dc62762?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxtb2Rlcm4lMjBob3VzZXxlbnwwfHx8fDE3NTU0MzM3NTJ8MA&ixlib=rb-4.1.0&q=80&w=1080',
       alt: 'Modern house exterior',
       hint: 'modern house'
     },
     {
-      src: '/hero2.avif',
+      src: 'https://images.unsplash.com/photo-1628744876497-eb30460be9f6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxsdXh1cnklMjBpbnRlcmlvcnxlbnwwfHx8fDE3NTU0MzM3NTJ8MA&ixlib=rb-4.1.0&q=80&w=1080',
       alt: 'Luxury living room interior',
       hint: 'luxury interior'
     },
     {
-      src: '/hero3.avif',
+      src: 'https://images.unsplash.com/photo-1665249934445-1de680641f50?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxhcGFydG1lbnQlMjBpbnRlcmlvcnxlbnwwfHx8fDE3NTU0MzM3NTJ8MA&ixlib=rb-4.1.0&q=80&w=1080',
       alt: 'Cozy apartment living room',
       hint: 'apartment interior'
     },
@@ -30,7 +30,7 @@ const images = [
 
 export default function HeroSection() {
     const plugin = React.useRef(
-        Autoplay({ delay: 2000, stopOnInteraction: true })
+        Autoplay({ delay: 5000, stopOnInteraction: true })
     );
 
     const scrollToContact = () => {
@@ -61,6 +61,7 @@ export default function HeroSection() {
                                 objectFit="cover"
                                 className="brightness-50"
                                 data-ai-hint={image.hint}
+                                priority={index === 0}
                             />
                         </CarouselItem>
                     ))}
