@@ -18,7 +18,7 @@ export default function HeroSection() {
         >
             <div className="absolute inset-0 w-full h-full -z-10">
                 <Image
-                    src="XxlbnwwfHx8fDE3NTU0MzM3NTJ8MA&ixlib=rb-4.1.0&q=80&w=1080"
+                    src="/hero2.png"
                     alt="Modern house exterior"
                     layout="fill"
                     objectFit="cover"
