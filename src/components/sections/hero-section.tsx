@@ -11,26 +11,26 @@ import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 
 const images = [
-  {
-    src: '/hero1.avif',
-    alt: 'Modern house exterior',
-    hint: 'modern house'
-  },
-  {
-    src: '/hero2.avif',
-    alt: 'Luxury living room interior',
-    hint: 'luxury interior'
-  },
-  {
-    src: '/hero3.avif',
-    alt: 'Cozy apartment living room',
-    hint: 'apartment interior'
-  },
-];
+    {
+      src: '/hero1.avif',
+      alt: 'Modern house exterior',
+      hint: 'modern house'
+    },
+    {
+      src: '/hero2.avif',
+      alt: 'Luxury living room interior',
+      hint: 'luxury interior'
+    },
+    {
+      src: '/hero3.avif',
+      alt: 'Cozy apartment living room',
+      hint: 'apartment interior'
+    },
+  ];
 
 export default function HeroSection() {
     const plugin = React.useRef(
-        Autoplay({ delay: 3000, stopOnInteraction: true })
+        Autoplay({ delay: 2000, stopOnInteraction: true })
     );
 
     const scrollToContact = () => {
