@@ -47,7 +47,7 @@ export default function HeroSection() {
         >
             <Carousel
                 plugins={[plugin.current]}
-                className="absolute inset-0 w-full h-full"
+                className="absolute inset-0 w-full h-full -z-10"
                 onMouseEnter={plugin.current.stop}
                 onMouseLeave={plugin.current.reset}
             >
@@ -68,8 +68,8 @@ export default function HeroSection() {
                 </CarouselContent>
             </Carousel>
 
-            <div className="absolute inset-0 bg-black/40 z-10" />
-            <div className="container relative z-20 px-4">
+            <div className="absolute inset-0 bg-black/40" />
+            <div className="container relative z-10 px-4">
                 <h1 className="text-4xl md:text-6xl font-headline font-bold tracking-tighter mb-4 text-white">
                     Transforming Visions into Reality
                 </h1>
