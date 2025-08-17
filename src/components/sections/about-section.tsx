@@ -22,7 +22,7 @@ export default function AboutSection() {
           <div className="order-1 md:order-2">
             <div className="aspect-w-4 aspect-h-3">
               <Image
-                src="https://placehold.co/600x450.png"
+                src="/about.jpg"
                 alt="Ar.Prithiv Anand.R"
                 width={600}
                 height={450}
